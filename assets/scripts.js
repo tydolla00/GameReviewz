@@ -1,7 +1,10 @@
 let darkBut = document.querySelector(".darkMode")
 darkBut.addEventListener("click",darkMode)
+<<<<<<< Updated upstream
 pressed = false; 
 
+=======
+>>>>>>> Stashed changes
 function darkMode() {
     //change background color to dark and text color to something light
     pressed = !pressed
@@ -11,12 +14,16 @@ function darkMode() {
     document.body.style.backgroundColor = "#1e272c";
     document.body.style.color = "white";
     document.querySelector(".darkMode").innerText = light;
+<<<<<<< Updated upstream
     document.getElementById("logo").src="img/logodark.png"
+=======
+>>>>>>> Stashed changes
     }
     else {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
         document.querySelector(".darkMode").innerText = dark;
+<<<<<<< Updated upstream
         document.getElementById("logo").src="img/logowhite.png"
     }
 }
@@ -47,4 +54,8 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
+=======
+    }
+    
+>>>>>>> Stashed changes
 }
