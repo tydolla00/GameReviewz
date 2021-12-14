@@ -3,40 +3,132 @@
 <html lang ="en">
 
     <head>
-        <meta charset ="utf-8"/>
-        <title> Home Page</title>
-        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <meta name="description" content="carousel with javascript">
+        <meta name="keywords" content="carousel,javascript">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script src="assets/scripts.js" async></script>
     </head>
     <body>
+        <img id="logo" src="img/logowhite.png" width=10% height=10% alt="GameReviewz Logo" style="margin-left: 5px;">
+        <a href="index.html"><img class ="home" src="img/homepage.png" width=5% height=5% alt="Home Icon"></a>
         <nav>
+            <!--Nav Bar-->
+            <button class = "darkMode" style="margin-left: 5px;" >Dark Mode</button>
             <ol>
-                <a href = "pc.html"> <li> PC</li> </a>
-                <a href = "playstation.html"> <li> Playstation</li> </a>
-                <a href = "xbox.html"> <li> Xbox</li> </a>
-                <a href = "switch.html"> <li> Switch</li> </a>
+                <a href = "index.html"> <li> PC</li> </a>
+                <a href = "index.html"> <li> Playstation</li> </a>
+                <a href = "index.html"> <li> Xbox</li> </a>
+                <a href = "index.html"> <li> Switch</li> </a>
             </ol>
         </nav>
+        <!-- Slideshow container -->
+        <div class="document-center">
+      <!--This carousel-container only exists so we can do the 
+      aspect ratio tricks in CSS-->
+      <div class="carousel-container">
+        <div class="carousel" id="carousel-1" auto-scroll="7000">
+          <!--The uppermost screen will appear first. This is due to JavaScript-->
+          <section class="carousel-screen">
+            <img src="img/PokemonBDSP.jp2" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/GodOfWar.jpeg" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/MetroidDread.png" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <!--These are not screens. They will always be on carousel-->
+          <section class="circle-container">
+            <!--These 'circles' need to match the number of carousel screens-->
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </section>
+          <div class="left-arrow">
+            <span class="chevron left"></span>
+          </div>
+          <div class="right-arrow">
+            <span class="chevron right"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/carousel.js"></script>
+        
+    <script type="text/javascript" src="assets/carousel.js"></script>
+        
         <!--This is the Reviews Section-->
-        <section style="text-align: center;">
-            <div class="rectanglebox" style="margin-top: 20px;">
-                <img src="img/bdsp.jpeg"width=100% height=100% alt = "Pokemon Brilliant Diamond, Shining Pearl Box Art">
-            </div>
+        <div style="text-align: center; margin-top: 5px;">
             <p style="margin-right: 40px; display: inline-block;"> Most Critical</p> 
             <p style="margin-right: 40px; display: inline-block;"> Recent</p>
             <p style="margin-right: 40px; display: inline-block;"> Best Rated</p>
             <p style="margin-right: 40px; display: inline-block;"> Most Comments</p>
-        </section><br>
-            <div class="box"><img src="img/halo.jpeg" width=100% height=100% alt="Halo Infinite"></div> 
-            <div class="text">Halo Infinite is a 2021 first-person shooter game developed by 343 Industries and published by Xbox Game Studios. It is the eighth main entry in the Halo series, and the third in the "reclaimer saga" following 2015's Halo 5: Guardians.
-                <div style="margin-top: 10px;"><i>Official Review: Halo Infinite is a superior FPS Shooter that gives you all bang for your $0 bucks. Multiplayer is Free to Play and the Campaign is $60. The multiplayer is high action and plays very fast. If you enjoy a challenge, Halo is the game for you.</i></div>
-            </div>
-            <div class="box"  style ="margin-top: 20px;"><img src="img/horizon.jpeg" width=100% height=100% alt="Horizon Forbidden West"></div>
-            <div class="text" style="margin-top: 20px">Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. It is set to be released on 18 February 2022 for the PlayStation 4 and PlayStation 5.
-                <div style="margin-top: 10px;"><i>Official Review: Horizon Forbideen West is a great sequel from the Original Game Horizon Zero Dawn. We had a ton of fun exploring the brand new map, brand new characters, and brand new story mode. If you haven't played the prequel, don't fret, you'll still enjoy the game. The story does a great job getting you caught up in everything that happened.</i></div>
-            </div>
-            <div class="box"  style ="margin-top: 20px;"><img src="img/cod.png" width=100% height=100% alt="Horizon Forbidden West"></div>
-            <div class="text" style="margin-top: 20px;">Call of Duty: Vanguard is a 2021 first-person shooter game developed by Sledgehammer Games and published by Activision. It was released on November 5 for Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S. It serves as the 18th installment in the overall Call of Duty series.
-                <div style="margin-top: 10px;"><i>Official Review: Call of Duty Vanguard is a terrible game, do not buy it. Read the reviews, you'll see everyone hates it.</i></div>
-            </div>
+        </div>
+
+    <div class = "box">
+        <a href="Halo.html">
+            <img src="img/Halo.png" class="homepageImage">
+        </a>
+        <div class ="textBox">
+            <i class="text">
+                Halo Infinite is a 2021 first-person shooter game developed by 343 Industries and published by Xbox Game Studios. It is the eighth main entry in the Halo series, and the third in the "reclaimer saga" following 2015's Halo 5: Guardians.
+            </i>
+        </div>
+    </div>
+
+    <br>
+
+    <div class = "box">
+        <a href="Horizon.html">
+            <img src="img/Horizon.jpeg" class="homepageImage">
+        </a>
+        <div class ="textBox">
+            <i class="text">
+                Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. It is set to be released on 18 February 2022 for the PlayStation 4 and PlayStation 5.
+            </i>
+        </div>
+    </div>
+
+    <br>
+
+    <div class = "box">
+        <a href="Cod.html">
+            <img src="img/Cod.jpeg" class="homepageImage">
+        </a>
+        <div class ="textBox">
+            <i class="text">
+                Call of Duty: Vanguard is a 2021 first-person shooter game developed by Sledgehammer Games and published by Activision. It was released on November 5 for Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S. It serves as the 18th installment in the overall Call of Duty series.
+            </i>
+        </div>
+    </div>
+
+    <br>
+
+    <div class = "box">
+        <a href="PokemonArceus.html">
+        <img src="img/PokemonArceus.png" class="homepageImage">
+        </a>
+        <div class ="textBox">
+            <i class="text">
+                Pokémon Legends: Arceus is an upcoming 2022 action role-playing game developed by Game Freak and published by Nintendo and The Pokémon Company for the Nintendo Switch
+            </i>
+        </div>
+    </div>
+
+    <br>
+        <footer>
+            <i>Copyright © John and Ty</i> <a href = "mailto:tb50563p@pace.edu" style="color: white"> Email me</a>        
+        </footer>
     </body>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html >
+<!--https://www.w3schools.com/bootstrap/bootstrap_carousel.asp-->
+<html lang ="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Horizon</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <meta name="description" content="carousel with javascript">
+        <meta name="keywords" content="carousel,javascript">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script src="assets/scripts.js" async></script>
+
+    </head>
+    <body>
+        <nav>
+          <button class = "darkMode" style="margin-left: 5px;" >Dark Mode</button>
+            <ol>
+                <a href = "index.html"> <li> PC</li> </a>
+                <a href = "index.html"> <li> Playstation</li> </a>
+                <a href = "index.html"> <li> Xbox</li> </a>
+                <a href = "index.html"> <li> Switch</li> </a>
+            </ol>
+        </nav>
+    <!--This is the Reviews Section-->
+    <div class="document-center">
+      <!--This carousel-container only exists so we can do the 
+      aspect ratio tricks in CSS-->
+      <div class="carousel-container">
+        <div class="carousel" id="carousel-1" auto-scroll="7000">
+          <!--The uppermost screen will appear first. This is due to JavaScript-->
+          <section class="carousel-screen">
+            <img src="img/Halo.png" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/MarioKart8.jpeg" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/MetroidDread.png" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <!--These are not screens. They will always be on carousel-->
+          <section class="circle-container">
+            <!--These 'circles' need to match the number of carousel screens-->
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </section>
+          <div class="left-arrow">
+            <span class="chevron left"></span>
+          </div>
+          <div class="right-arrow">
+            <span class="chevron right"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/carousel.js"></script>
+        
+    <script type="text/javascript" src="assets/carousel.js"></script>
+
+    <br>
+
+    <div style ="margin-top: 10px; margin-bottom: 25px; margin-left: auto; margin-right: auto; width:90%; height: 100%; display: block;">
+        <img src="img/Horizon.jpeg" width=100% height=100% alt="Horizon Forbidden West">
+        <x-star-rating number="5" id="rating" style = "margin-top: 10px;"></x-star-rating>
+        <script src="assets/scripts.js"></script>
+
+        <div class="text" style ="margin-top: 10px; ">
+            Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. It is set to be released on 18 February 2022 for the PlayStation 4 and PlayStation 5.
+            
+            Official Review: Horizon Forbideen West is a great sequel from the Original Game Horizon Zero Dawn. We had a ton of fun exploring the brand new map, brand new characters, and brand new story mode. If you haven't played the prequel, don't fret, you'll still enjoy the game. The story does a great job getting you caught up in everything that happened.
+        </div>
+    </div>
+
+    <br>
+
+    <div class = "expanding">
+      <img src="img/ProfilePic.png" width= 20% height= 100% alt="Profile Picture" style = "margin: 5px; max-width: 100px; float: left; display: inline-block;">
+      <div style="margin: 5px; overflow: hidden; display: flex; justify-content: center; align-content: center; padding: 1px;">
+        <i class="text">
+          I love love love open world games. But for some reason I’ve never gotten past about 1/3 or so of HZD (I have the addon.) I’m not sure why, I think I just get distracted by games like RDR2 (which I played for about 10 MM hours) and now Ghost of Tsushima. But I think I need to just do a restart of HZD and finish it before this one comes out.
+        </i>
+      </div>
+    </div>
+
+    <br>
+
+    <div class = "expanding">
+      <img src="img/ProfilePic.png" width= 20% height= 100% alt="Profile Picture" style = "margin: 5px; max-width: 100px; float: left; display: inline-block;">
+      <div style="margin: 5px; overflow: hidden; display: flex; justify-content: center; align-content: center; padding: 1px;">
+        <i class="text">
+        I got like 80-90% through the first game (though I didn’t go to the expansion area)- I basically had to do the final dungeon, as far as I could tell. Then my PS4 died, taking my save with it, since Sony only does cloud saves if you specifically upload them (kind of defeating the purpose, imo), and so when I picked up another PS4, I just didn’t have the heart to go through the entire game again. Since this is cross-gen, I’m certainly interested, though.
+        </i>
+      </div>
+    </div>
+
+    <br>
+
+    <div class = "expanding">
+      <img src="img/ProfilePic.png" width= 20% height= 100% alt="Profile Picture" style = "margin: 5px; max-width: 100px; float: left; display: inline-block;">
+      <div style="margin: 5px; overflow: hidden; display: flex; justify-content: center; align-content: center; padding: 1px;">
+        <i class="text">
+        Ever since I fully completed Horizon I've been super hype for a sequel, then the reveal trailer for Forbidden West came out and I lost my mind. I'm literally having dreams about playing FW and I'm loving it. Of everything I'm most hype for it's probably exploring the new map. In the trailer we see Aloy riding a charger on a beach and next to it was the ruins of the golden gate bridge. That's just so fucking awesome to me and its driving me crazy. It's got so bad that now everytime I just think about the beach it makes me want to play Horizon. Zero Dawn was so amazing that I have full trust in Guerrilla to give us the sequel that is worthy of the first game
+        </i>
+      </div>
+    </div>
+    <!--
+          <div class="box"  style ="margin-top: 20px;">
+          <img src="img/Fits/horizon.jpeg" width=100% height=100% alt="Horizon Forbidden West">
+          </div>
+            <div class="text" style="margin-top: 20px">Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. It is set to be released on 18 February 2022 for the PlayStation 4 and PlayStation 5.
+                <div style="margin-top: 10px;"><i>Official Review: Horizon Forbideen West is a great sequel from the Original Game Horizon Zero Dawn. We had a ton of fun exploring the brand new map, brand new characters, and brand new story mode. If you haven't played the prequel, don't fret, you'll still enjoy the game. The story does a great job getting you caught up in everything that happened.</i></div>
+            </div>
+
+-->
+      <br>
+        <footer>
+            <i>Copyright © John and Ty</i> <a href = "mailto:tb50563p@pace.edu" style="color: white"> Email me</a>        
+        </footer>
+
+    </body>
+</html>

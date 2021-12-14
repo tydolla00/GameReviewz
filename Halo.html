@@ -1,0 +1,132 @@
+<!DOCTYPE html >
+<!--https://www.w3schools.com/bootstrap/bootstrap_carousel.asp-->
+<html lang ="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Halo</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <meta name="description" content="carousel with javascript">
+        <meta name="keywords" content="carousel,javascript">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script src="assets/scripts.js" async></script>
+
+    </head>
+    <body>
+        <nav>
+          <button class = "darkMode" style="margin-left: 5px;" >Dark Mode</button>
+            <ol>
+                <a href = "index.html"> <li> PC</li> </a>
+                <a href = "index.html"> <li> Playstation</li> </a>
+                <a href = "index.html"> <li> Xbox</li> </a>
+                <a href = "index.html"> <li> Switch</li> </a>
+            </ol>
+        </nav>
+    <!--This is the Reviews Section-->
+    <div class="document-center">
+      <!--This carousel-container only exists so we can do the 
+      aspect ratio tricks in CSS-->
+      <div class="carousel-container">
+        <div class="carousel" id="carousel-1" auto-scroll="7000">
+          <!--The uppermost screen will appear first. This is due to JavaScript-->
+          <section class="carousel-screen">
+            <img src="img/Cod.jpeg" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/GodOfWar.jpeg" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/MarioKart8.jpeg" alt="" />
+            <section class="text-container">
+            </section>
+          </section>
+          <!--These are not screens. They will always be on carousel-->
+          <section class="circle-container">
+            <!--These 'circles' need to match the number of carousel screens-->
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </section>
+          <div class="left-arrow">
+            <span class="chevron left"></span>
+          </div>
+          <div class="right-arrow">
+            <span class="chevron right"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/carousel.js"></script>
+        
+    <script type="text/javascript" src="assets/carousel.js"></script>
+
+    <br>
+
+    <div style ="margin-top: 10px; margin-bottom: 25px; margin-left: auto; margin-right: auto; width:90%; height: 100%; display: block;">
+        <img src="img/Halo.png" width=100% height=100% alt="Halo">
+        <x-star-rating number="5" id="rating" style = "margin-top: 10px;"></x-star-rating>
+        <script src="assets/scripts.js"></script>
+
+        <div class="text" style ="margin-top: 10px; ">
+            Halo Infinite is a 2021 first-person shooter game developed by 343 Industries and published by Xbox Game Studios. It is the sixth mainline entry in the Halo series,[1] and the third in the "Reclaimer Saga" following Halo 5: Guardians (2015).
+
+            The campaign follows the human supersoldier Master Chief and his fight against the enemy Banished on the Forerunner ringworld Zeta Halo. Unlike previous installments in the series, the multiplayer portion of the game is free-to-play.
+        </div>
+    </div>
+
+    <br>
+
+    <div class = "expanding">
+      <img src="img/ProfilePic.png" width= 20% height= 100% alt="Profile Picture" style = "margin: 1%; max-width: 100px; float: left; display: inline-block;">
+      <div style="margin: 5px; overflow: hidden; display: flex; justify-content: center; align-content: center; padding: 1px;">
+        <i class="text">
+        Absolutely amazing Campaign, I'd recommend to both new players and halo fans alike. Although the story is a bit confusing, but its good nonetheless. Halo infinite managed to capture the vibe and the essence of Halo Combat Evolved, which gives this game a very nostalgic feeling. The gameplay is top tier. I wouldn't say much about the multiplayer since its still on Beta.
+        </i>
+      </div>
+    </div>
+
+    <br>
+
+    <div class = "expanding">
+      <img src="img/ProfilePic.png" width= 20% height= 100% alt="Profile Picture" style = "margin: 1%; max-width: 100px; float: left; display: inline-block;">
+      <div style="margin: 5px; overflow: hidden; display: flex; justify-content: center; align-content: center; padding: 1px;">
+        <i class="text">
+        Amazing Story, the new Ai is so so lovable and I really feel that I had an emotional attachment to pretty much all the characters. I love the use of the Banished as something more than just your simple enemy who is motivated because they are 'evil'. Chief was amazing, the voice acting was impeccable and he had emotional moments where I even resented his actions. Imo this may be the best depiction of Chief ever.
+
+        I really wish that there was a little bit more like 'battle' such as in the missions in Halo reach where you are being supported by infantry and I think it could've been awesome to see all of the squads you rescued back you up at the end of the game.
+        </i>
+      </div>
+    </div>
+
+    <br>
+
+    <div class = "expanding">
+      <img src="img/ProfilePic.png" width= 20% height= 100% alt="Profile Picture" style = "margin: 1%; max-width: 100px; float: left; display: inline-block;">
+      <div style="margin: 5px; overflow: hidden; display: flex; justify-content: center; align-content: center; padding: 1px;">
+        <i class="text">
+        This game is by far the best they’ve made so far! I’m roughly half way through the campaign and there’s SO MUCH to do! I’ve been a massive halo fan since halo 1! And I still love it just as much! I would recommend getting this game asap! Even the multiplayer was mental! Decent ranking system mostly about K/D ratio that helps you play people your own skill set. This game will keep you busy all year round! Plus… there’s loads of secrets ;) enjoy! 10/10 for me!
+        </i>
+      </div>
+    </div>
+    <!--
+          <div class="box"  style ="margin-top: 20px;">
+          <img src="img/Fits/horizon.jpeg" width=100% height=100% alt="Horizon Forbidden West">
+          </div>
+            <div class="text" style="margin-top: 20px">Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. It is set to be released on 18 February 2022 for the PlayStation 4 and PlayStation 5.
+                <div style="margin-top: 10px;"><i>Official Review: Horizon Forbideen West is a great sequel from the Original Game Horizon Zero Dawn. We had a ton of fun exploring the brand new map, brand new characters, and brand new story mode. If you haven't played the prequel, don't fret, you'll still enjoy the game. The story does a great job getting you caught up in everything that happened.</i></div>
+            </div>
+
+-->
+      <br>
+        <footer>
+            <i>Copyright © John and Ty</i> <a href = "mailto:tb50563p@pace.edu" style="color: white"> Email me</a>        
+        </footer>
+
+    </body>
+</html>
