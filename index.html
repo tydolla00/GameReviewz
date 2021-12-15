@@ -144,12 +144,15 @@
     </div>
 
     <br>
-        <footer>
-            <i>Copyright © John and Ty</i> <a href = "mailto:tb50563p@pace.edu" style="color: white"> Email me</a>
+    <footer style="text-align: center; padding: 10px;">
+        <div style="margin-bottom: 10px">
+            <i>Copyright © John and Ty</i> <a href = "mailto:tb50563p@pace.edu" style="color: white;"> Email me</a>
+        </div>
+        <div style="margin-left: 10px; margin-right: 10px;">
             <form>
-                <label for="name">First and Last Name</label>
+                <label for="name" style="text-align: left;">First and Last Name</label>
                 <input type="text" id="name" name="firstLast"><br>
-                <label for="game">Game You are Reviewing</label>
+                <label for="game" style="text-align: left;">Game You are Reviewing</label>
                 <select id="game" name="game">
                     <option value="">---</option>
                     <option value="Halo">Halo Infinite</option>
@@ -157,10 +160,19 @@
                     <option value="Horizon">Horizon Forbidden West</option>
                     <option value="Pokemon">Pokemon Arceus</option>
                 </select><br>
-                <label for="review">Review</label>
-                <textarea type="text" id="review" name="review"></textarea><br>
-                <input type="submit" name="submit" value="submit">
-            </form>       
-        </footer>
+                <p>
+                    <label style="text-align: left; float:left; vertical-align: middle; margin-top: 10%;"for="review">Review</label>
+                    <textarea type="text" id="review" name="review">
+
+                    </textarea>
+                </p>
+                <div style="position: relative; height: 10px">
+                <div style=" left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: absolute;">
+                <input style ="text-align: center;" type="submit" id="submit" name="submit" value="submit">
+                </div>
+                </div>
+            </form> 
+        </div>
+    </footer>
     </body>
 </html>
