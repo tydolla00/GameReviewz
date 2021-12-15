@@ -92,6 +92,7 @@ function darkMode() {
 let submitBut = document.getElementById("submit")
 submitBut.addEventListener("click",thankYou)
 function thankYou(){
-    alert("Thank You for submitting a review");
+    let formFields = new URLSearchParams(window.location.search)
+    let donuts = document.getElementById("game").innerHtml = formFields.get("name")
+    alert("Thank You for submitting a review!");
 }
-
