@@ -89,3 +89,9 @@ function darkMode() {
         document.getElementById("logo").src="img/logowhite.png"
     }
 }
+let submitBut = document.getElementById("submit")
+submitBut.addEventListener("click",thankYou)
+function thankYou(){
+    alert("Thank You for submitting a review");
+}
+
