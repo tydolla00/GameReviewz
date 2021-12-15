@@ -35,22 +35,39 @@
           <!--The uppermost screen will appear first. This is due to JavaScript-->
           <section class="carousel-screen">
             <img src="img/PokemonBDSP.jp2" alt="" />
-            <section class="text-container">
+            <section class="text-container">Pokemon Brilliant Diamond and Shining Pearl 
             </section>
+            <div class="numbertext">1 / 5</div>
           </section>
           <section class="carousel-screen">
             <img src="img/GodOfWar.jpeg" alt="" />
-            <section class="text-container">
+            <section class="text-container">God of War Ragnarok
             </section>
+            <div class="numbertext">2 / 5</div>
           </section>
           <section class="carousel-screen">
             <img src="img/MetroidDread.png" alt="" />
-            <section class="text-container">
+            <section class="text-container">Metroid Dread
             </section>
+            <div class="numbertext">3 / 5</div>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/horizon.jpeg" alt="" />
+            <section class="text-container">Horizon Forbidden West
+            </section>
+            <div class="numbertext">4 / 5</div>
+          </section>
+          <section class="carousel-screen">
+            <img src="img/Halo.png" alt="" />
+            <section class="text-container">Halo Infinite
+            </section>
+            <div class="numbertext">5 / 5</div>
           </section>
           <!--These are not screens. They will always be on carousel-->
           <section class="circle-container">
             <!--These 'circles' need to match the number of carousel screens-->
+            <div class="circle"></div>
+            <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -128,7 +145,22 @@
 
     <br>
         <footer>
-            <i>Copyright © John and Ty</i> <a href = "mailto:tb50563p@pace.edu" style="color: white"> Email me</a>        
+            <i>Copyright © John and Ty</i> <a href = "mailto:tb50563p@pace.edu" style="color: white"> Email me</a>
+            <form>
+                <label for="name">First and Last Name</label>
+                <input type="text" id="name" name="firstLast"><br>
+                <label for="game">Game You are Reviewing</label>
+                <select id="game" name="game">
+                    <option value="">---</option>
+                    <option value="Halo">Halo Infinite</option>
+                    <option value="Cod">Call of Duty: Vanguard</option>
+                    <option value="Horizon">Horizon Forbidden West</option>
+                    <option value="Pokemon">Pokemon Arceus</option>
+                </select><br>
+                <label for="review">Review</label>
+                <textarea type="text" id="review" name="review"></textarea><br>
+                <input type="submit" name="submit" value="submit">
+            </form>       
         </footer>
     </body>
 </html>
